@@ -15,10 +15,7 @@ const FormInput = (props: formInputProps) => {
 
   return (
     <div className="space-y-2">
-      <label
-        htmlFor={name}
-        className="block text-sm font-medium text-slate-200"
-      >
+      <label htmlFor={name} className="block text-sm font-medium text-gray-900">
         {label}
       </label>
       {type === "input" ? (
@@ -27,7 +24,7 @@ const FormInput = (props: formInputProps) => {
           id={name}
           placeholder={placeholder}
           {...register(name, { required: name + " is required" })}
-          className="w-full rounded-lg border border-slate-700 bg-slate-900 px-4 py-3 text-slate-100 placeholder-slate-400 focus:border-cyan-400 focus:outline-none focus:ring-1 focus:ring-cyan-400"
+          className="w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-gray-900 placeholder-gray-500 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
         />
       ) : (
         <textarea
@@ -36,11 +33,11 @@ const FormInput = (props: formInputProps) => {
           placeholder={placeholder}
           rows={4}
           {...register(name, { required: name + " is required" })}
-          className="w-full rounded-lg border border-slate-700 bg-slate-900 px-4 py-3 text-slate-100 placeholder-slate-400 focus:border-cyan-400 focus:outline-none focus:ring-1 focus:ring-cyan-400"
+          className="w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-gray-900 placeholder-gray-500 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
         />
       )}
       {error && error[name] && error[name]["message"] && (
-        <p className="text-sm text-red-400">{error[name]["message"]}</p>
+        <p className="text-sm text-red-600">{error[name]["message"]}</p>
       )}
     </div>
   );

@@ -8,13 +8,13 @@ type project = {
 
 const ProjectCard = ({ project }: { project: project }) => {
   return (
-    <article className="w-full rounded-3xl border border-slate-700 bg-slate-950/95 p-6 shadow-[0_20px_60px_-30px_rgba(15,23,42,0.9)] transition duration-300 hover:-translate-y-1 hover:border-cyan-400/60">
+    <article className="w-full rounded-3xl border border-gray-200 bg-white p-6 shadow-lg transition duration-300 hover:-translate-y-1 hover:shadow-xl">
       <div className="mb-4 flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
         <div>
-          <h3 className="text-2xl font-semibold text-slate-100">
+          <h3 className="text-2xl font-semibold text-gray-900">
             {project.name}
           </h3>
-          <p className="mt-2 text-sm text-slate-400">
+          <p className="mt-2 text-sm text-gray-600">
             Featured tools and technologies used in this project.
           </p>
         </div>
@@ -23,7 +23,7 @@ const ProjectCard = ({ project }: { project: project }) => {
             href={project.link}
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center rounded-full border border-cyan-500/20 bg-cyan-500/10 px-4 py-2 text-sm font-medium text-cyan-300 transition hover:bg-cyan-500/15"
+            className="inline-flex items-center rounded-full border border-blue-600 bg-blue-600 px-4 py-2 text-sm font-medium text-white transition hover:bg-blue-700"
           >
             View Project
           </a>
@@ -34,7 +34,7 @@ const ProjectCard = ({ project }: { project: project }) => {
         {project.techstack.map((tech) => (
           <span
             key={`${project.id}-${tech}`}
-            className="rounded-full bg-slate-800 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-slate-300"
+            className="rounded-full bg-gray-100 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-gray-700"
           >
             {tech}
           </span>
@@ -42,16 +42,16 @@ const ProjectCard = ({ project }: { project: project }) => {
       </div>
 
       {project.details.length > 0 ? (
-        <ul className="space-y-3 text-slate-300">
+        <ul className="space-y-3 text-gray-700">
           {project.details.map((detail, index) => (
             <li key={index} className="flex gap-3">
-              <span className="mt-1 inline-block h-2 w-2 rounded-full bg-cyan-400" />
+              <span className="mt-1 inline-block h-2 w-2 rounded-full bg-blue-600" />
               <span>{detail}</span>
             </li>
           ))}
         </ul>
       ) : (
-        <p className="text-slate-500">Details coming soon for this project.</p>
+        <p className="text-gray-500">Details coming soon for this project.</p>
       )}
     </article>
   );
@@ -137,12 +137,20 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="min-h-screen px-6 py-12 md:px-10">
+    <section
+      id="projects"
+      className="min-h-screen bg-gray-50 px-6 py-12 md:px-10"
+    >
       <div className="mx-auto max-w-5xl space-y-8">
         <div className="space-y-3">
-          <h2 className="text-3xl font-bold text-slate-100 sm:text-4xl">
+          <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
             Projects
           </h2>
+          <p className="max-w-2xl text-base leading-7 text-gray-600">
+            A selection of applications and systems built with modern stacks,
+            with a focus on performance, maintainability, and polished user
+            experience.
+          </p>
         </div>
 
         <div className="space-y-6">
