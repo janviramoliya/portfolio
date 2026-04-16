@@ -1,3 +1,4 @@
+import { AiOutlineApi } from "react-icons/ai";
 import {
   FaNodeJs,
   FaReact,
@@ -8,7 +9,9 @@ import {
   FaCss3Alt,
   FaJs,
   FaJava,
+  FaCodeBranch,
 } from "react-icons/fa";
+import { MdApi } from "react-icons/md";
 
 import {
   SiExpress,
@@ -25,6 +28,7 @@ import {
   SiMongoose,
   SiSequelize,
 } from "react-icons/si";
+import { TbBrandSocketIo } from "react-icons/tb";
 
 export default function Skills() {
   const skills = [
@@ -50,9 +54,10 @@ export default function Skills() {
     { name: "NGINX", icon: <SiNginx /> },
     { name: "GraphQL", icon: <SiGraphql /> },
     { name: "Java", icon: <FaJava /> },
+    { name: "CI/CD", icon: <FaCodeBranch /> },
+    { name: "WebSocket", icon: <TbBrandSocketIo /> },
+    { name: "REST API", icon: <AiOutlineApi /> },
   ];
-
-  const additionalSkills = ["CI/CD", "WebSocket", "REST API"];
 
   return (
     <section
@@ -81,22 +86,6 @@ export default function Skills() {
               </span>
             </div>
           ))}
-        </div>
-
-        <div className="text-center">
-          <h3 className="mb-4 text-lg font-semibold text-gray-900">
-            Additional Skills
-          </h3>
-          <div className="flex flex-wrap justify-center gap-3">
-            {additionalSkills.map((skill) => (
-              <span
-                key={skill}
-                className="rounded-full bg-blue-100 px-4 py-2 text-sm font-medium text-blue-800"
-              >
-                {skill}
-              </span>
-            ))}
-          </div>
         </div>
       </div>
     </section>

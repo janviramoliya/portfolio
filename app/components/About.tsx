@@ -40,7 +40,7 @@ export default function About() {
             See projects <CiLocationArrow1 className="ml-2" />
           </a>
           <a
-            href="/resume.pdf"
+            href="/Janvi_Ramoliya_Resume.pdf"
             download
             className="inline-flex w-full items-center justify-center rounded-full border border-gray-300 bg-white px-6 py-3 text-sm font-semibold text-gray-900 transition hover:border-gray-400 hover:bg-gray-50 sm:w-auto"
           >
