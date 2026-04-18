@@ -105,7 +105,12 @@ const Projects = () => {
         "MySQL",
         "TypeScript",
       ],
-      details: [],
+      details: [
+        "Developed key modules such as employee details, leave management, check-in/checkout, employee assets, and reporting tools for team leaders and managers.",
+        "Designed & implemented RESTful APIs using Node.js, Express.js, and TypeScript to handle business logic and data operations.",
+        "Utilized MySQL with Sequelize ORM for transactional data and database management, ensuring efficient queries and data integrity.",
+        "Optimized performance by using Redis for caching frequently accessed data and Socket.IO for real-time notifications and announcements.",
+      ],
       link: "",
     },
     {
@@ -127,20 +132,10 @@ const Projects = () => {
       ],
       link: "",
     },
-    {
-      id: 5,
-      name: "Portfolio",
-      techstack: ["NextJS", "TypeScript", "TailwindCSS"],
-      details: [],
-      link: "",
-    },
   ];
 
   return (
-    <section
-      id="projects"
-      className="min-h-screen bg-gray-50 px-6 py-12 md:px-10"
-    >
+    <section id="projects" className="bg-gray-50 px-6 py-12 md:px-10">
       <div className="mx-auto max-w-5xl space-y-8">
         <div className="space-y-3">
           <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">

@@ -20,7 +20,6 @@ const FormInput = (props: formInputProps) => {
       </label>
       {type === "input" ? (
         <input
-          name={name}
           id={name}
           placeholder={placeholder}
           {...register(name, { required: name + " is required" })}
@@ -28,7 +27,6 @@ const FormInput = (props: formInputProps) => {
         />
       ) : (
         <textarea
-          name={name}
           id={name}
           placeholder={placeholder}
           rows={4}

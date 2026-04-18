@@ -52,10 +52,7 @@ const Experience = () => {
   ];
 
   return (
-    <section
-      id="experience"
-      className="min-h-screen bg-gray-50 px-6 py-12 md:px-10"
-    >
+    <section id="experience" className="bg-gray-50 px-6 py-12 md:px-10">
       <div className="mx-auto max-w-5xl space-y-8">
         <div className="space-y-3">
           <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">

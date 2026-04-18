@@ -4,12 +4,12 @@ import Skills from "@/app/components/Skills";
 import Experience from "@/app/components/Experience";
 import Projects from "@/app/components/Projects";
 import Contact from "@/app/components/Contact";
+import Footer from "@/app/components/Footer";
 
 export default function Home() {
   return (
     <main>
       <Navbar />
-
       <div className="pt-20">
         <About />
         <Skills />
@@ -17,6 +17,7 @@ export default function Home() {
         <Projects />
         <Contact />
       </div>
+      <Footer />
     </main>
   );
 }

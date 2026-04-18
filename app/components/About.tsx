@@ -1,11 +1,9 @@
-import { BiArrowFromRight, BiArrowToRight } from "react-icons/bi";
 import { CiLocationArrow1 } from "react-icons/ci";
 import { MdFileDownload } from "react-icons/md";
-import { TbArrowsCross } from "react-icons/tb";
 
 export default function About() {
   return (
-    <section id="about" className="min-h-screen bg-gray-50 px-6 py-12 md:px-10">
+    <section id="about" className="bg-gray-50 px-6 py-12 md:px-10">
       <div className="mx-auto flex max-w-4xl flex-col gap-10 rounded-3xl border border-gray-200 bg-white p-8 shadow-lg">
         <div className="space-y-6">
           <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
@@ -19,14 +17,15 @@ export default function About() {
           </p>
 
           {/* Intro Line */}
-          <p className="max-w-2xl text-base leading-8 text-gray-600 sm:text-lg">
-            Hello, I'm{" "}
-            <span className="font-semibold text-gray-900">Janvi</span>, a{" "}
-            <span className="font-semibold text-blue-600">
-              Full Stack Developer
-            </span>{" "}
-            with <span className="text-gray-800">3+ years</span> of experience
-            building scalable and user-focused web applications.
+          <p className="font-semibold max-w-2xl text-base leading-8 text-gray-600 sm:text-lg font-mono">
+            `Hello, I'm {"${"}
+            <span className="text-yellow-600">Janvi</span>
+            {"}, ${"}
+            <span className="text-yellow-600">Full Stack Developer</span>
+            {"} with ${"}
+            <span className="text-yellow-600">3+ years</span>
+            {"}"} of experience building scalable and user-focused web
+            applications.`
           </p>
         </div>
 

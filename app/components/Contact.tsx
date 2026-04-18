@@ -21,10 +21,7 @@ const Contact = () => {
   };
 
   return (
-    <section
-      id="contact"
-      className="min-h-screen bg-gray-50 px-6 py-12 md:px-10"
-    >
+    <section id="contact" className="bg-gray-50 px-6 py-12 md:px-10">
       <div className="mx-auto max-w-6xl">
         <div className="grid gap-10 lg:grid-cols-2">
           {/* Left Side */}
@@ -32,7 +29,7 @@ const Contact = () => {
             <div className="flex items-center gap-3">
               <div className="rounded-full bg-blue-100 p-3">
                 <svg
-                  className="h-6 w-6 text-blue-600"
+                  className="h-6 w-6 text-blue-500"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -53,7 +50,7 @@ const Contact = () => {
             {/* Hero Contact Line */}
             <p className="max-w-xl text-2xl font-semibold leading-relaxed text-gray-900 sm:text-3xl">
               Best way to reach out is{" "}
-              <span className="font-mono text-blue-600">
+              <span className="font-mono text-blue-500">
                 janviramoliya27@gmail.com
               </span>{" "}
               or just simply fill out this form.

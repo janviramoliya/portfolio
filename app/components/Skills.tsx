@@ -60,16 +60,13 @@ export default function Skills() {
   ];
 
   return (
-    <section
-      id="skills"
-      className="min-h-screen bg-gray-50 px-6 py-12 md:px-10"
-    >
-      <div className="mx-auto max-w-6xl">
-        <div className="mb-10 text-center">
+    <section id="skills" className="bg-gray-50 px-6 py-12 md:px-10">
+      <div className="mx-auto max-w-5xl space-y-8">
+        <div className="space-y-3">
           <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
             Skills
           </h2>
-          <p className="mt-4 text-gray-600">
+          <p className="max-w-2xl text-base leading-7 text-gray-600">
             Technologies and tools I work with to build robust applications.
           </p>
         </div>
